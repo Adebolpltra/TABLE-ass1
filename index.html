@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- STYLE -->
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+            font-family: aria;
+        }
+
+        table, tr, th, td{
+            border: 2px solid black;
+        }
+    </style>
+
+</head>
+<body>
+    <table class="table-container">
+        
+        <!-- TABLE HEAD -->
+        <thead class="table-head">
+            <!-- TABLE ROW -->
+            <tr>
+                <!-- TABLE HEAD -->
+                <th rowspan="3">Day</th>
+                <th colspan="4">Seminar</th>
+                
+            </tr>
+
+            <tr>
+                <!-- TABLE HEAD -->
+                <th colspan="2">Schedule</th>
+                <th colspan="3" rowspan="2">Topic</th>
+            </tr>
+
+            <tr>
+                <!-- TABLE HEAD -->
+                <th>Begin</th>
+                <th>End</th>
+            </tr>
+        </thead>
+
+
+        <!-- TABLE BODY -->
+        <tbody>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8:00 a.m.</td>
+
+                <td rowspan="2">5:00 a.m.</td>
+                <td style="text-align: center;">Introducttion to XML</td>
+
+            </tr>
+
+            <tr>
+                <td >Validity: DTD and Relax NG</td>
+            </tr>
+
+            <tr>
+                <td rowspan="3">Tuesday</td>
+
+                <td>8:00 a.m.</td>
+                <td>11:00 a.m.</td>
+
+                <td style="text-align: center; padding: px;">XPath</td>
+            </tr>
+
+            <tr>
+                <td>11:00 a.m.</td>
+                <td>2:00 p.m.</td>
+                <td rowspan="2" style="text-align: center;">XSL Transformations</td>
+            </tr>
+
+            <tr>
+                <td>2:00 p.m.</td>
+                <td>5:00 p.m.</td>
+            </tr>
+
+            <tr>
+                <td>Wednesday</td>
+                <td>8:00 a.m.</td>
+                <td>12:00 p.m.</td>
+                <td style="text-align: center;">XSL Formatting Objects</td>
+            </tr>
+
+        </tbody>
+    </table>
+    
+</body>
+</html>
